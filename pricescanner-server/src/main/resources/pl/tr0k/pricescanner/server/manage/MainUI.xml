@@ -1,0 +1,4 @@
+<VerticalLayout sizeFull="true" xmlns:l="urn:vaadin:parent">
+    <MenuBar id="menuBar" width="100%"/>
+    <CssLayout id="mainLayout" sizeFull="true" l:expandRatio="1.0" />
+</VerticalLayout>

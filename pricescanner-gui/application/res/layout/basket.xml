@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/DefaultScannerStyle"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/nameText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/TopText"
+            android:layout_marginBottom="10dp"/>
+
+    <View
+            android:id="@+id/advert_view"
+            style="@style/Divider"
+            android:layout_width="match_parent"/>
+
+    <GridView
+            android:id="@+id/basket_gv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:numColumns="2"
+            android:verticalSpacing="20dp"
+            android:horizontalSpacing="20dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:padding="10dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="@drawable/basket_item_rounded"
+            />
+
+    <View
+            style="@style/Divider"
+            android:id="@+id/sum_divider_view"
+            android:layout_width="match_parent"/>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/home_product_name"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:id="@+id/busket_sum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="25sp"
+                android:textColor="@color/home_product_name"
+                android:text="@string/busket_sum"
+                android:layout_gravity="center_vertical"
+                />
+
+        <TextView
+                android:id="@+id/busket_sum_num_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/home_product_name"
+                android:textSize="25sp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                />
+        <Button
+                android:id="@+id/back_home_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="backToHome"
+                android:text="@string/back"
+                style="@style/ButtonText"
+                android:background="@drawable/blue_button"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/DefaultScannerStyle"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/nameText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/TopText"
+            android:layout_marginBottom="10sp"/>
+
+    <View
+          android:id="@+id/advert_view"
+          style="@style/Divider"
+          android:layout_below="@id/nameText"
+          android:layout_width="fill_parent"/>
+
+    <ImageView
+            android:id="@+id/advertImageView"
+            android:layout_below="@id/advert_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/advert1"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/advert_image_description"
+            android:paddingTop="10dp"/>
+
+</RelativeLayout>

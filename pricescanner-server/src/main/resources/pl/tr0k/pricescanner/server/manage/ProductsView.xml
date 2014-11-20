@@ -1,0 +1,26 @@
+<HorizontalSplitPanel xmlns:l="urn:vaadin:parent">
+
+    <!-- Left side layout - the contact list -->
+    <VerticalLayout sizeFull="">
+        <Table id="productList" selectable="true" immediate="true" sizeFull="" l:expandRatio="1.0" />
+
+        <!-- Controls in the footer -->
+        <HorizontalLayout width="100%">
+            <TextField id="searchField" inputPrompt="Wyszukuj produkty" width="100%" l:expandRatio="1.0" textChangeEventMode="LAZY" />
+            <Button id="newProductButton" caption="Nowy" />
+        </HorizontalLayout>
+    </VerticalLayout>
+
+    <!-- Right side layout - the editor -->
+    <FormLayout margin="true" visible="false" id="editorLayout">
+        <Button id="removeProductButton" caption="Usuń" />
+        <Image id="image"/>
+        <Upload id="imageUpload" buttonCaption="Zmień obraz" />
+        <TextField id="ean" width="100%" caption="EAN" />
+        <TextField id="name" width="100%" caption="Nazwa" />
+        <TextField id="price" width="100%" caption="Cena" />
+        <TextArea id="description" width="100%" caption="Opis" />
+        <Button id="saveProductButton" caption="Zapisz" />
+    </FormLayout>
+
+</HorizontalSplitPanel>

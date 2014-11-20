@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        style="@style/DefaultScannerStyle"
+        android:padding="20dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:id="@+id/nameText"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                style="@style/TopText"
+                android:layout_marginBottom="10dp" />
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:id="@+id/productInfoLayout"
+            android:visibility="invisible">
+        <ImageView
+                android:layout_width="@dimen/product_home_image_width"
+                android:layout_height="@dimen/product_home_image_height"
+                android:id="@+id/imageView"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/image_description"/>
+        <TableLayout
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:shrinkColumns="0"
+                >
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/titled_pane"
+                    >
+                <TextView
+                        android:id="@+id/priceText"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_column="0"
+                        android:textColor="@android:color/black"
+                        android:layout_margin="10dp"
+                        android:textSize="@dimen/home_product_text_size"/>
+            </TableRow>
+            <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/titled_pane">
+                <TextView
+                        android:id="@+id/describeText"
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@android:color/black"
+                        android:minLines="15"
+                        android:singleLine="false"
+                        android:lines="15"
+                        android:layout_margin="10dp"
+                        android:textSize="@dimen/home_product_text_size"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom" android:layout_gravity="left|top">
+        <Button
+                style="@style/ButtonText"
+                android:background="@drawable/blue_button"
+                android:text="@string/basket_button"
+                android:layout_weight="1"
+                android:onClick="sendToBasketActivity"
+                android:id="@+id/basketButton"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+        <Button
+                style="@style/ButtonText"
+                android:background="@drawable/blue_button"
+                android:text="@string/adverts_button"
+                android:layout_weight="1"
+                android:onClick="sendToAdvertsActivity"
+                android:id="@+id/advertsButton"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+    </LinearLayout>
+
+</FrameLayout>

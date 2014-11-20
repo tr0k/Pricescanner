@@ -1,0 +1,22 @@
+<HorizontalSplitPanel xmlns:l="urn:vaadin:parent">
+
+    <!-- Left side layout - the contact list -->
+    <VerticalLayout sizeFull="">
+        <Table id="advertisementsList" selectable="true" immediate="true" sizeFull="" l:expandRatio="1.0" dragMode="ROW" />
+
+        <!-- Controls in the footer -->
+        <HorizontalLayout width="100%">
+            <Button id="newAdvertisementButton" caption="Dodaj reklamę" />
+        </HorizontalLayout>
+    </VerticalLayout>
+
+    <!-- Right side layout - the editor -->
+    <FormLayout margin="true" visible="false" id="editorLayout">
+        <Button id="removeAdvertisementButton" caption="Usuń" />
+        <Upload id="advertisementUpload" buttonCaption="Zmień obraz" />
+        <CheckBox id="activeCheckbox" caption="Czy aktywna"/>
+
+        <Button id="saveAdvertisementButton" caption="Zapisz" />
+    </FormLayout>
+
+</HorizontalSplitPanel>

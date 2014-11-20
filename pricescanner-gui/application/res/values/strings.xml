@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- app metadata -->
+    <string name="app_name">Sprawdzarka cen</string>
+
+    <!-- labels -->
+    <string name="main_window_lbl">Zeskanuj kod produktu</string>
+    <string name="lbl_price">Cena:</string>
+    <string name="lbl_name">Nazwa produktu:</string>
+    <string name="lbl_description">Opis:</string>
+
+    <!-- toasts  -->
+    <string name="abstractActivity_loading">Trwa wczytywanie danych…</string>
+    <string name="abstractActivity_connectionError">Wystąpił błąd połączenia z serwerem</string>
+    <string name="abstractActivity_productNotFound">Nie znaleziono produktu</string>
+
+    <!-- texts -->
+    <string name="image_description">Zdjęcie produktu</string>
+    <string name="home_activity_tiitle">Sprawdzarka cen</string>
+    <string name="home_main_text">Zeskanuj kod, aby odczytać informacje o produkcie</string>
+    <string name="currency">zł</string>
+    <string name="basket_button">Koszyk zakupów</string>
+    <string name="adverts_button">Reklamy</string>
+    <string name="advert_image_description">Zdjęcie reklamy</string>
+    <string name="busket_sum">Suma:&#160;</string>
+    <string name="product_adapter_name">Nazwa:&#160;</string>
+    <string name="product_adapter_price">Cena:&#160;</string>
+    <string name="back">Cofnij</string>
+
+</resources>
